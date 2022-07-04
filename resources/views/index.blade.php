@@ -9,6 +9,7 @@
     <title>Home Page</title>
 </head>
 <body :class="{ 'dark': dark }" x-data="data()">
+    <h3>happy happy</h3>
     <div class="flex min-h-screen justify-center items-center">
         <h1 class="text-gray-800 text-3xl font-semibold">This is the homepage</h1>
     </div>
