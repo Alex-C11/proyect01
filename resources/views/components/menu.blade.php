@@ -23,10 +23,30 @@
             </a>
         </li>
     </ul>
+    <ul class="mt-6">
+        <li class="relative px-6 py-3">
+            <!-- Active menu -->
+            @if(url()->current() == route('dashboard'))
+            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                  aria-hidden="true">
+            </span>
+            @endif
+            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+               href="{{route('dashboard')}}">
+                <svg class="w-5 h-5" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                     stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                    </path>
+                </svg>
+                <span class="ml-4">Empadronamineto</span>
+            </a>
+        </li>
+    </ul>
 
     <!-- rest of the menu -->
     <ul>
-        
+
             <li class="relative px-6 py-3">
                 <a class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200"
                 href="{{route('profile.show')}}">
@@ -38,16 +58,16 @@
                 </a>
             </li>
             @can('user_management_access')
-            <li class="relative px-6 py-3" 
-            @if(url()->current() == route('admin.users.index') 
-            || url()->current() == route('admin.roles.index') 
+            <li class="relative px-6 py-3"
+            @if(url()->current() == route('admin.users.index')
+            || url()->current() == route('admin.roles.index')
             || url()->current() == route('admin.permissions.index')
             || url()->current() == route('admin.users.create')
             || url()->current() == route('admin.roles.create')
             || url()->current() == route('admin.permissions.create')
-            ) 
+            )
                 x-data="{isUsersMenuOpen : true}">
-                
+
                 <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
                 aria-hidden="true">
                  </span>
@@ -80,21 +100,21 @@
                         aria-label="submenu">
 
                         @can('permission_access')
-                        <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 
+                        <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200
                         @if(url()->current() == route('admin.permissions.index')) bg-white border-l-2 border-blue-600 rounded-sm ring-1 ring-gray-300 @endif ">
                             <a class="w-full" href="{{route('admin.permissions.index')}}">Permissions</a>
                         </li>
                         @endcan
 
                         @can('role_access')
-                        <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 
+                        <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200
                         @if(url()->current() == route('admin.roles.index')) bg-white border-l-2 border-blue-600 rounded-sm ring-1 ring-gray-300 @endif">
                             <a class="w-full" href="{{route('admin.roles.index')}}">Roles</a>
                         </li>
                         @endcan
 
                         @can('user_access')
-                        <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 
+                        <li class="px-2 py-1 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200
                         @if(url()->current() == route('admin.users.index')) bg-white border-l-2 border-blue-600 rounded-sm ring-1 ring-gray-300 @endif">
                             <a class="w-full" href="{{route('admin.users.index')}}">Users</a>
                         </li>

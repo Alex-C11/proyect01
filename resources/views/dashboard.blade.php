@@ -22,9 +22,11 @@
         </div>
     </a>
 </div>
+
 @else
     <div class="">
         <p>You are in the Dashboard</p>
+
     </div>
 @endcan
 @endsection
