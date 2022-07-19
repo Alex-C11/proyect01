@@ -20,13 +20,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('associations',Association::class)->name('associations');
-Route::get('activities',Activity::class)->name('activities');
-Route::get('assistences',Assistence::class)->name('assistences');
-Route::get('associates',Associate::class)->name('associates');
+
 
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+    Route::get('associations',Association::class)->name('associations');
+    Route::get('activities',Activity::class)->name('activities');
+    Route::get('assistences',Assistence::class)->name('assistences');
+    Route::get('associates',Associate::class)->name('associates');
 
     Route::prefix('admin')->group(function (){
         Route::get('/users',ViewUsers::class)->name('admin.users.index');

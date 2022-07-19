@@ -1,12 +1,21 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-<<<<<<< HEAD
-
-
-.colors{
-    background-color :aqua
-};
-=======
-/*hola papi*/
->>>>>>> 36b78c8d1da93e528824514a898b699d3c2f43b4
+.our-projects .container-project .project-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+.our-projects .container-project .project-img img{
+  width: calc(30% - 10px);
+  margin:10px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media only screen and (max-width:773px){
+    .our-projects .container-project .project-img img{width: 80%; margin-bottom: 30px;}
+}
