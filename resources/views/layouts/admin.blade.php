@@ -14,7 +14,7 @@
         <!-- Desktop sidebar -->
     <aside class="z-20 flex-shrink-0 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block">
         <x-menu/>
-    </aside>
+    </aside class="bg-green-500">
     <!-- Mobile sidebar -->
         <!-- Backdrop -->
         <div x-show="isSideMenuOpen" x-transition:enter="transition ease-in-out duration-150"

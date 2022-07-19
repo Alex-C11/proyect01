@@ -18,7 +18,19 @@ class DatabaseSeeder extends Seeder
             RolesTableSeeder::class,
             PermissionRoleTableSeeder::class,
             UserSeeder::class,
-            RoleUserTableSeeder::class, 
+            RoleUserTableSeeder::class,
+            StandSeeder::class,
+            PeriodSeeder::class,
+            AssociateSeeder::class,
+
+            FamilySeeder::class,
+
+
+            AssociationSeeder::class,
+            DebitSeeder::class,
+            ActivitySeeder::class,
+            AssistenceSeeder::class,
+            PaymentSeeder::class,
         ]);
         // \App\Models\User::factory(10)->create();
     }
