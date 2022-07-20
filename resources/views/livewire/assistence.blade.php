@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-<div class="py-6  row sales row sales layout-top-spacing border-gray-200 dark:border-gray-700">
-   <div class="p-7">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
-=======
+
 <div class="row sales layout-top-spacing">
     <div class="p-7">
          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
              <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
->>>>>>> 890b6f71c06cd6d7cc7a48482b99f5fcaaacf019
+
 
                  <div class="flex items-center p-2 rounded-md flex-1">
                      <label class=" w-full relative text-gray-400 focus-within:text-gray-600 block">
@@ -70,6 +65,9 @@
                              </tr>
                              @endforeach
 
+                            <div>
+                                {{get-procedure}}
+                            </div>
                          </tbody>
                      </table>
                  </div>

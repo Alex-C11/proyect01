@@ -26,7 +26,12 @@ Route::get('/', function () {
     return view('index');
 });
 
+route::get('get-procedure',function(){
+    $id=1;
+    $post=DB::select("CALL get_assistences_by_id(".$id.")");
+    dd($post);
 
+});
 Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
     Route::get('associations',Association::class)->name('associations');
@@ -37,6 +42,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('stands',Stands::class)->name('stands');
     Route::get('payments',Payment::class)->name('payments');
     Route::get('debits',Debit::class)->name('debits');
+
 
     Route::prefix('admin')->group(function (){
         Route::get('/users',ViewUsers::class)->name('admin.users.index');
