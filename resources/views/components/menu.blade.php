@@ -1,6 +1,6 @@
-<div class="py-4 bg-green-500 colors dark:text-gray-400">
+<div class="py-4 text-gray-500  dark:text-gray-400">
     <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="{{route('dashboard')}}">
-        Admin Panel
+        Panel Acomita
     </a>
     <!-- First item in the list -->
     <ul class="mt-6">
@@ -92,6 +92,76 @@
             </a>
         </li>
     </ul>
+    <!-- First item in the list -->
+    <ul class="mt-6">
+        <li class="relative px-6 py-3">
+            <!-- Active menu -->
+            @if(url()->current() == route('stands'))
+            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                  aria-hidden="true">
+            </span>
+            @endif
+            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+               href="{{route('stands')}}">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px" viewBox="0 0 500 500" version="1.1">
+                <title>booth</title>
+                <g id="booth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M100,450 L400,450 L400,330 L100,330 L100,450 Z M70,319.994199 C70,308.951708 80.7496289,300 94.0043182,300 L405.995682,300 C419.252901,300 430,308.956997 430,319.994199 L430,460.005801 C430,471.048292 419.250371,480 405.995682,480 L94.0043182,480 C80.7470993,480 70,471.043003 70,460.005801 L70,319.994199 Z M100,100 L400,100 L400,51 L100,51 L100,100 Z M70,40.99228 C70,29.9508486 80.7496289,21 94.0043182,21 L405.995682,21 C419.252901,21 430,29.9546555 430,40.99228 L430,110.00772 C430,121.049151 419.250371,130 405.995682,130 L94.0043182,130 C80.7470993,130 70,121.045345 70,110.00772 L70,40.99228 Z M370,140 L400,140 L400,290 L370,290 L370,140 Z M130,140 L130,290 L100,290 L100,140 L130,140 Z M249.50214,237.696148 C275.879457,237.696148 297.338879,258.752161 297.989102,284.972881 C297.9992,285.380124 298.00428,290 298.00428,290 L201,290 L201.000759,289.532123 C201.002866,288.323308 201.009357,285.163911 201.020183,284.785433 C201.76775,258.651882 223.187708,237.696148 249.50214,237.696148 Z M249.259629,155 C269.349873,155 285.636234,171.286361 285.636234,191.376605 C285.636234,211.466849 269.349873,227.75321 249.259629,227.75321 C229.169385,227.75321 212.883024,211.466849 212.883024,191.376605 C212.883024,171.286361 229.169385,155 249.259629,155 Z" id="Shape" fill="#000000" fill-rule="nonzero"/>
+                </g>
+            </svg>
+                <span class="ml-4">stands</span>
+            </a>
+        </li>
+    </ul>
+    <!-- First item in the list -->
+    <ul class="mt-6">
+        <li class="relative px-6 py-3">
+            <!-- Active menu -->
+            @if(url()->current() == route('periods'))
+            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                  aria-hidden="true">
+            </span>
+            @endif
+            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+               href="{{route('periods')}}">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" height="24" id="svg958" version="1.1" viewBox="0 0 6.3499999 6.3500002" width="24"><defs id="defs952"/><g id="layer1"><path d="M 1.5856425,0.79421825 V 1.0577163 H 0.79277259 c -0.146148,5.819e-4 -0.264159,0.1194736 -0.263601,0.2655647 v 4.2314692 c -8.47e-4,0.1462924 0.11725,0.2654978 0.263601,0.2660812 H 5.5551606 C 5.7023194,5.821387 5.8216775,5.7018504 5.8208285,5.5547502 V 1.323281 C 5.8213845,1.1763822 5.7021165,1.0571563 5.5551606,1.0577163 h -0.79287 V 0.79421825 c -0.0046,-0.3554151 -0.533567,-0.3513831 -0.5297861,0 V 1.0577163 H 2.1149115 V 0.79421825 c 5.451e-4,-0.3536541 -0.52862,-0.3531411 -0.529269,0 z M 1.0584406,1.5867791 h 0.5272019 v 0.2660812 c 0,0.3539807 0.529269,0.3489553 0.529269,0 V 1.5867791 h 2.117593 v 0.2660812 c 0,0.3571489 0.5297861,0.3487308 0.5297861,0 V 1.5867791 h 0.529269 v 0.7951442 h -4.233119 z m 0,1.3221405 h 4.233119 V 5.291252 h -4.233119 z m 0.5272019,0.2655646 c -0.3299719,0 -0.3510829,0.5295794 0,0.5295794 h 0.529269 c 0.360394,5.557e-4 0.368686,-0.5284972 0,-0.5295794 z m 1.324723,0 c -0.352377,0.00103 -0.360659,0.530147 0,0.5295794 h 0.529269 c 0.354453,5.557e-4 0.3751231,-0.5284708 0,-0.5295794 z m 1.322139,0 c -0.347477,0.00102 -0.351613,0.5301343 0,0.5295794 h 0.5297861 c 0.3507978,0 0.3712498,-0.5284832 0,-0.5295794 z m -2.646862,1.0586421 c -0.345646,0 -0.3456439,0.529063 0,0.529063 h 0.529269 c 0.347176,9.525e-4 0.358879,-0.5282872 0,-0.529063 z m 1.324723,0 c -0.36534,0 -0.359107,0.529063 0,0.529063 h 0.529269 c 0.339507,9.525e-4 0.345395,-0.529063 0,-0.529063 z m 1.322139,0 c -0.3524811,7.673e-4 -0.3525189,0.529063 0,0.529063 h 0.5297861 c 0.3504969,9.789e-4 0.3638629,-0.5282719 0,-0.529063 z" id="path2546" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"/></g></svg>
+                <span class="ml-4">periods</span>
+            </a>
+        </li>
+    </ul>
+    <!-- First item in the list -->
+    <ul class="mt-6">
+        <li class="relative px-6 py-3">
+            <!-- Active menu -->
+            @if(url()->current() == route('payments'))
+            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                  aria-hidden="true">
+            </span>
+            @endif
+            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+               href="{{route('payments')}}">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" height="24" id="svg958" version="1.1" viewBox="0 0 6.3499999 6.3500002" width="24"><defs id="defs952"/><g id="layer1"><path d="M 1.5856425,0.79421825 V 1.0577163 H 0.79277259 c -0.146148,5.819e-4 -0.264159,0.1194736 -0.263601,0.2655647 v 4.2314692 c -8.47e-4,0.1462924 0.11725,0.2654978 0.263601,0.2660812 H 5.5551606 C 5.7023194,5.821387 5.8216775,5.7018504 5.8208285,5.5547502 V 1.323281 C 5.8213845,1.1763822 5.7021165,1.0571563 5.5551606,1.0577163 h -0.79287 V 0.79421825 c -0.0046,-0.3554151 -0.533567,-0.3513831 -0.5297861,0 V 1.0577163 H 2.1149115 V 0.79421825 c 5.451e-4,-0.3536541 -0.52862,-0.3531411 -0.529269,0 z M 1.0584406,1.5867791 h 0.5272019 v 0.2660812 c 0,0.3539807 0.529269,0.3489553 0.529269,0 V 1.5867791 h 2.117593 v 0.2660812 c 0,0.3571489 0.5297861,0.3487308 0.5297861,0 V 1.5867791 h 0.529269 v 0.7951442 h -4.233119 z m 0,1.3221405 h 4.233119 V 5.291252 h -4.233119 z m 0.5272019,0.2655646 c -0.3299719,0 -0.3510829,0.5295794 0,0.5295794 h 0.529269 c 0.360394,5.557e-4 0.368686,-0.5284972 0,-0.5295794 z m 1.324723,0 c -0.352377,0.00103 -0.360659,0.530147 0,0.5295794 h 0.529269 c 0.354453,5.557e-4 0.3751231,-0.5284708 0,-0.5295794 z m 1.322139,0 c -0.347477,0.00102 -0.351613,0.5301343 0,0.5295794 h 0.5297861 c 0.3507978,0 0.3712498,-0.5284832 0,-0.5295794 z m -2.646862,1.0586421 c -0.345646,0 -0.3456439,0.529063 0,0.529063 h 0.529269 c 0.347176,9.525e-4 0.358879,-0.5282872 0,-0.529063 z m 1.324723,0 c -0.36534,0 -0.359107,0.529063 0,0.529063 h 0.529269 c 0.339507,9.525e-4 0.345395,-0.529063 0,-0.529063 z m 1.322139,0 c -0.3524811,7.673e-4 -0.3525189,0.529063 0,0.529063 h 0.5297861 c 0.3504969,9.789e-4 0.3638629,-0.5282719 0,-0.529063 z" id="path2546" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"/></g></svg>
+                <span class="ml-4">payments</span>
+            </a>
+        </li>
+    </ul>
+    <!-- First item in the list -->
+    <ul class="mt-6">
+        <li class="relative px-6 py-3">
+            <!-- Active menu -->
+            @if(url()->current() == route('debits'))
+            <span class="absolute inset-y-0 left-0 w-1 bg-purple-600 rounded-tr-lg rounded-br-lg"
+                  aria-hidden="true">
+            </span>
+            @endif
+            <a class="inline-flex items-center w-full text-sm font-semibold text-gray-800 transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200 dark:text-gray-100"
+               href="{{route('debits')}}">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" height="24" id="svg958" version="1.1" viewBox="0 0 6.3499999 6.3500002" width="24"><defs id="defs952"/><g id="layer1"><path d="M 1.5856425,0.79421825 V 1.0577163 H 0.79277259 c -0.146148,5.819e-4 -0.264159,0.1194736 -0.263601,0.2655647 v 4.2314692 c -8.47e-4,0.1462924 0.11725,0.2654978 0.263601,0.2660812 H 5.5551606 C 5.7023194,5.821387 5.8216775,5.7018504 5.8208285,5.5547502 V 1.323281 C 5.8213845,1.1763822 5.7021165,1.0571563 5.5551606,1.0577163 h -0.79287 V 0.79421825 c -0.0046,-0.3554151 -0.533567,-0.3513831 -0.5297861,0 V 1.0577163 H 2.1149115 V 0.79421825 c 5.451e-4,-0.3536541 -0.52862,-0.3531411 -0.529269,0 z M 1.0584406,1.5867791 h 0.5272019 v 0.2660812 c 0,0.3539807 0.529269,0.3489553 0.529269,0 V 1.5867791 h 2.117593 v 0.2660812 c 0,0.3571489 0.5297861,0.3487308 0.5297861,0 V 1.5867791 h 0.529269 v 0.7951442 h -4.233119 z m 0,1.3221405 h 4.233119 V 5.291252 h -4.233119 z m 0.5272019,0.2655646 c -0.3299719,0 -0.3510829,0.5295794 0,0.5295794 h 0.529269 c 0.360394,5.557e-4 0.368686,-0.5284972 0,-0.5295794 z m 1.324723,0 c -0.352377,0.00103 -0.360659,0.530147 0,0.5295794 h 0.529269 c 0.354453,5.557e-4 0.3751231,-0.5284708 0,-0.5295794 z m 1.322139,0 c -0.347477,0.00102 -0.351613,0.5301343 0,0.5295794 h 0.5297861 c 0.3507978,0 0.3712498,-0.5284832 0,-0.5295794 z m -2.646862,1.0586421 c -0.345646,0 -0.3456439,0.529063 0,0.529063 h 0.529269 c 0.347176,9.525e-4 0.358879,-0.5282872 0,-0.529063 z m 1.324723,0 c -0.36534,0 -0.359107,0.529063 0,0.529063 h 0.529269 c 0.339507,9.525e-4 0.345395,-0.529063 0,-0.529063 z m 1.322139,0 c -0.3524811,7.673e-4 -0.3525189,0.529063 0,0.529063 h 0.5297861 c 0.3504969,9.789e-4 0.3638629,-0.5282719 0,-0.529063 z" id="path2546" style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate;stop-color:#000000;stop-opacity:1"/></g></svg>
+                <span class="ml-4">debits</span>
+            </a>
+        </li>
+    </ul>
+
 
 
 

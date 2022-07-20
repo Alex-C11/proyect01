@@ -11,7 +11,7 @@ class Stands extends Component{
 
     public function render(){
         $stands=Stand::all();
-        return view('livewire\stand',compact('stands'));
+        return view('livewire.stand',compact('stands'));
     }
 
     public function create(){
@@ -38,9 +38,9 @@ class Stands extends Component{
         ]);
         Stand::updateOrCreate(['id'=>$this->stand_id],
             [
-                'name'=>$this->fullname,
-                'row'=> $this->dni,
-                'column'=>$this->phone,
+                'name'=>$this->name,
+                'row'=> $this->row,
+                'column'=>$this->column,
             ]
         );
         session()->flash('message',

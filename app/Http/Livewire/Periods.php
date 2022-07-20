@@ -12,7 +12,7 @@ class Periods extends Component{
 
     public function render(){
         $periods=Period::all();
-        return view('livewire\period',compact('periods'));
+        return view('livewire.period',compact('periods'));
     }
 
     public function create(){
@@ -27,6 +27,7 @@ class Periods extends Component{
     private function resetInputsFields(){
         $this->description="";
         $this->status="";
+
 
     }
     public function store(){
@@ -51,8 +52,8 @@ class Periods extends Component{
         $this->resetInputsFields();
     }
 
-    public function edit(Period $period){
-        $this->stand_id=$period->id;
+    public function edity(Period $period){
+        $this->period_id=$period->id;
         $this->description=$period->description;
         $this->status=$period->status;
         $this->openModal();

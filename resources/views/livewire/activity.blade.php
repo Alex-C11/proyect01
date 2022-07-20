@@ -1,5 +1,5 @@
-<div class="row sales layout-top-spacing">
-    <div class="py-12">
+
+    <div class="py-6  row sales layout-top-spacing border-gray-200 dark:border-gray-700">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
 

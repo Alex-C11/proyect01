@@ -14,6 +14,11 @@ use App\Http\Livewire\Admin\Users\ViewUsers;
 use App\Http\Livewire\Assistence;
 use App\Http\Livewire\Associate;
 use App\Http\Livewire\Association;
+use App\Http\Livewire\Debit;
+use App\Http\Livewire\Payment;
+use App\Http\Livewire\Periods;
+use App\Http\Livewire\Stands;
+
 use Illuminate\Support\Facades\Route;
 
 
@@ -28,6 +33,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('activities',Activity::class)->name('activities');
     Route::get('assistences',Assistence::class)->name('assistences');
     Route::get('associates',Associate::class)->name('associates');
+    Route::get('periods',Periods::class)->name('periods');
+    Route::get('stands',Stands::class)->name('stands');
+    Route::get('payments',Payment::class)->name('payments');
+    Route::get('debits',Debit::class)->name('debits');
 
     Route::prefix('admin')->group(function (){
         Route::get('/users',ViewUsers::class)->name('admin.users.index');
